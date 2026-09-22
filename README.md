@@ -1,4 +1,4 @@
-# mộc shop
+# GEARZONE
 
 Mẫu website shop bán hàng bằng PHP thuần, HTML, CSS và JavaScript. Dữ liệu sản phẩm đang nằm trong `index.php` để dễ thay bằng MySQL sau này.
 
