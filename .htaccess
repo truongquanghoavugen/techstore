@@ -1,0 +1,21 @@
+RewriteEngine On
+
+RewriteRule ^trang-chu/?$ /index.php [L,QSA]
+RewriteRule ^san-pham/?$ /products.php [L,QSA]
+RewriteRule ^tin-tuc/?$ /news.php [L,QSA]
+RewriteRule ^gioi-thieu/?$ /about.php [L,QSA]
+RewriteRule ^lien-he/?$ /contact.php [L,QSA]
+RewriteRule ^gio-hang/?$ /cart.php [L,QSA]
+RewriteRule ^thanh-toan/?$ /checkout.php [L,QSA]
+RewriteRule ^tai-khoan/?$ /app/account/account.php [L,QSA]
+RewriteRule ^dang-nhap/?$ /app/auth/login.php [L,QSA]
+RewriteRule ^dang-ky/?$ /app/auth/register.php [L,QSA]
+RewriteRule ^quen-mat-khau/?$ /app/auth/forgot-password.php [L,QSA]
+RewriteRule ^api/(.*)$ /app/api/$1 [L,QSA]
+RewriteRule ^admin/(.*)$ /app/admin/$1 [L,QSA]
+RewriteRule ^auth/(.*)$ /app/auth/$1 [L,QSA]
+RewriteRule ^account/(.*)$ /app/account/$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L,QSA]
